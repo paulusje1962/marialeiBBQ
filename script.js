@@ -510,25 +510,16 @@ async function submitOrder() {
 
         } else {
 
-
-            await fetch(
-                CONFIG.API_URL,
-                {
-
-                    method:"POST",
-
-
 await fetch(
     CONFIG.API_URL,
     {
-        method:"POST",
+        method: "POST",
 
-        headers:{
-            "Content-Type":"application/json"
+        headers: {
+            "Content-Type": "application/json"
         },
 
-        body:
-            JSON.stringify(order)
+        body: JSON.stringify(order)
     }
 );
                     headers:{
