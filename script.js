@@ -412,7 +412,7 @@ function createOrderObject() {
         bbq: {
 
         "spare ribs",
-		getNumber("spare-ribs"),
+		getNumber("spare ribs"),
         
 	"kipfilet",
 		getNumber("kipfilet"),
@@ -421,13 +421,13 @@ function createOrderObject() {
 		getNumber("Hamburger"),
         
 	"gevogelte brochette",
-		getNumber("gevogelte-brochette"),
+		getNumber("gevogelte brochette"),
         
 	"steak 150g",
-		getNumber("steak-150g"),
+		getNumber("steak 150g"),
 	
 	"Merguez worst",
-		getNumber("Merguez-worst"),
+		getNumber("Merguez worst"),
 	
 	"lamsbrazade",
 		getNumber("lamsbrazade"),
