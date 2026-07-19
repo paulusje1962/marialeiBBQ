@@ -522,23 +522,8 @@ await fetch(
         body: JSON.stringify(order)
     }
 );
-                    headers:{
-
-                        "Content-Type":
-                        "application/json"
-
-                    },
-
-                    body:
-                        JSON.stringify(order)
-
-                }
-            );
-
-
-        }
-
-
+              
+	}
 
         showSuccess();
 
