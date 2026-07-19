@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marialei Moederdag BBQ</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGIN -->
+
+    <section id="loginPage" class="card">
+
+        <h1>🍖 Marialei Moederdag BBQ</h1>
+
+        <p>
+            Welkom!
+        </p>
+
+        <p>
+            Geef het gedeelde paswoord in om je bestelling te plaatsen.
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Paswoord">
+
+        <button id="loginBtn">
+            Verder
+        </button>
+
+        <p id="loginError" class="error"></p>
+
+    </section>
+
+
+    <!-- FORMULIER -->
+
+    <section id="formPage" class="hidden">
+
+        <div class="card">
+
+            <h2>Bestelformulier</h2>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Naam *</label>
+
+                    <input
+                        type="text"
+                        id="naam"
+                        required>
+
+                </div>
+
+                <div>
+
+                    <label>Huisnummer</label>
+
+                    <input
+                        type="text"
+                        id="huisnummer">
+
+                </div>
+
+            </div>
+
+
+            <h3>Aantal aanwezigen</h3>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Volwassenen</label>
+
+                    <input
+                        type="number"
+                        id="volwassenen"
+                        min="0"
+                        value="0">
+
+                </div>
+
+                <div>
+
+                    <label>Kinderen</label>
+
+                    <input
+                        type="number"
+                        id="kinderen"
+                        min="0"
+                        value="0">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🍖 BBQ</h2>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Product</th>
+                    <th>Aantal</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td>Ribbetjes</td>
+                    <td><input type="number" id="ribbetjes" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Kipfilet</td>
+                    <td><input type="number" id="kipfilet" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Steak</td>
+                    <td><input type="number" id="steak" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Merguez worst</td>
+                    <td><input type="number" id="merguez" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Varkenslapje</td>
+                    <td><input type="number" id="varkenslapje" value="0" min="0"></td>
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🍨 Dessert</h2>
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Dessert</th>
+                    <th>Aantal</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td>Vanille-ijs</td>
+                    <td><input type="number" id="vanille" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Aardbei-ijs</td>
+                    <td><input type="number" id="aardbei" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Tiramisu</td>
+                    <td><input type="number" id="tiramisu" value="0" min="0"></td>
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Opmerkingen</h2>
+
+            <textarea
+                id="opmerking"
+                rows="5"
+                placeholder="Eventuele opmerkingen..."></textarea>
+
+        </div>
+
+
+        <div class="card totals">
+
+            <h2>Overzicht</h2>
+
+            <p>Totaal personen:
+                <strong id="totaalPersonen">0</strong>
+            </p>
+
+            <p>Totaal vlees:
+                <strong id="totaalVlees">0</strong>
+            </p>
+
+            <p>Totaal desserts:
+                <strong id="totaalDessert">0</strong>
+            </p>
+
+        </div>
+
+
+        <button id="submitBtn" class="submitButton">
+
+            Bestelling verzenden
+
+        </button>
+
+    </section>
+
+
+    <!-- BEDANKT -->
+
+    <section id="successPage" class="card hidden">
+
+        <h1>✅ Bedankt!</h1>
+
+        <p>
+
+            Je bestelling werd succesvol opgeslagen.
+
+        </p>
+
+        <h2>
+
+            Tot op de Marialei Moederdag BBQ!
+
+        </h2>
+
+    </section>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
