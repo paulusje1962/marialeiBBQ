@@ -99,11 +99,16 @@ function setupTotals() {
         "volwassenen",
         "kinderen",
 
-        "ribbetjes",
+ 	"spare ribs",
         "kipfilet",
-        "steak",
-        "merguez",
-        "varkenslapje",
+        "Hamburger",
+        "gevogelte brochette",
+        "steak 150g",
+	"Merguez worst",
+	"lamsbrazade",
+	"Varkenslapje",
+      
+
 
         "vanille",
         "aardbei",
@@ -406,20 +411,29 @@ function createOrderObject() {
 
         bbq: {
 
-            ribbetjes:
-                getNumber("ribbetjes"),
-
-            kipfilet:
-                getNumber("kipfilet"),
-
-            steak:
-                getNumber("steak"),
-
-            merguez:
-                getNumber("merguez"),
-
-            varkenslapje:
-                getNumber("varkenslapje")
+        "spare ribs",
+		getNumber("spare ribs"),
+        
+	"kipfilet",
+		getNumber("kipfilet"),
+        
+	"Hamburger",
+		getNumber("Hamburger"),
+        
+	"gevogelte brochette",
+		getNumber("gevogelte brochette"),
+        
+	"steak 150g",
+		getNumber("steak 150g"),
+	
+	"Merguez worst",
+		getNumber("Merguez worst"),
+	
+	"lamsbrazade",
+		getNumber("lamsbrazade"),
+	
+	"Varkenslapje"
+		getNumber('Varkenslapje")
 
         },
 
