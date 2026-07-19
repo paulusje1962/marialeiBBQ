@@ -31,11 +31,14 @@ API_URL: "https://script.google.com/macros/s/......../exec",
      * Producten
      */
     BBQ_ITEMS: [
-        "ribbetjes",
+        "spare ribs",
         "kipfilet",
-        "steak",
-        "merguez",
-        "varkenslapje"
+        "Hamburger",
+        "gevogelte brochette",
+        "steak 150g",
+	"Merguez worst",
+	"lamsbrazade",
+	"Varkenslapje"
     ],
 
     /*
